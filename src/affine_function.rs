@@ -19,7 +19,15 @@ pub mod affine {
             return false;
         }
 
-        pub fn is_crescent_decrescent_constant(coefficients: &AffineCoefficient) {}
+        pub fn is_crescent_decrescent_constant(coefficients: &AffineCoefficient) {
+            if coefficients.angular > 0.0 {
+                println!("Your function is crescent");
+            } else if coefficients.angular < 0.0 {
+                println!("Your function is decrescent");
+            } else {
+                println!("Your function is constant");
+            }
+        }
 
         pub fn zero_of_function(coefficients: &AffineCoefficient) -> f32 {
             (-coefficients.linear) / coefficients.angular
