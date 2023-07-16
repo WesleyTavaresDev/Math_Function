@@ -29,7 +29,7 @@ fn main() {
     };
 
     loop {
-        println!("1.Is crescent?\n2.Is decrescent?\n3.Funtion Summary");
+        println!("1.Is my function crescent, decrescent or constant?\n2.Funtion Summary\n");
         let mut input = String::new();
         io::stdin().read_line(&mut input).expect("Failed to read");
 
@@ -37,10 +37,8 @@ fn main() {
             Ok(num) => {
                 println!("{}", num);
                 if num == 1 {
-                    println!("{}\n", affine::AffineCoefficient::is_crescent(&affine));
+                    affine::AffineCoefficient::is_crescent_decrescent_constant(&affine);
                 } else if num == 2 {
-                    println!("{}\n", affine::AffineCoefficient::is_decrescent(&affine));
-                } else if num == 3 {
                     affine::AffineCoefficient::function_summary(&affine);
                 } else {
                     continue;

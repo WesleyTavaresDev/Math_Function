@@ -5,7 +5,7 @@ pub mod affine {
     }
 
     impl AffineCoefficient {
-        pub fn is_crescent(coefficients: &AffineCoefficient) -> bool {
+        /*pub fn is_crescent(coefficients: &AffineCoefficient) -> bool {
             if coefficients.angular > 0.0 {
                 return true;
             }
@@ -17,7 +17,7 @@ pub mod affine {
                 return true;
             }
             return false;
-        }
+        }*/
 
         pub fn is_crescent_decrescent_constant(coefficients: &AffineCoefficient) {
             if coefficients.angular > 0.0 {
