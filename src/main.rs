@@ -12,20 +12,14 @@ fn main() {
         .expect("failed to read the input");
 
     println!("Enter b:");
-    let mut linar_coefficient = String::new();
+    let mut linear_coefficient = String::new();
     io::stdin()
-        .read_line(&mut linar_coefficient)
+        .read_line(&mut linear_coefficient)
         .expect("failed to read the input");
 
     let affine = affine::AffineCoefficient {
-        angular: match angular_coefficient.trim().parse() {
-            Ok(num) => num,
-            Err(_) => panic!("Please enter a number"),
-        },
-        linear: match linar_coefficient.trim().parse() {
-            Ok(num) => num,
-            Err(_) => panic!("Please enter a number"),
-        },
+        angular: angular_coefficient.trim().parse().expect("Not a number"),
+        linear: linear_coefficient.trim().parse().expect("Not a number"),
     };
 
     loop {
