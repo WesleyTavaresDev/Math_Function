@@ -2,11 +2,11 @@
 
 ##  Função afim
  A função afim é uma função $$f: \mathbb{R} -> \mathbb{R}$$ dada por $$f(x)=ax+b$$
-Ela por ser crescente, decrescente ou constante, dependendo do valor do coeficiente angular, representado pela variavel a na fórmula da função, ou seja:
+Ela por ser crescente, decrescente ou constante, dependendo do valor do coeficiente angular, representado pela variavel ***a*** na fórmula da função, ou seja:
 
-- crescente: $$a > 0$$
-- decrescente: $$a < 0$$
-- constante: $$a = 0$$
+- **crescente**: $$a > 0$$
+- **decrescente**: $$a < 0$$
+- **constante**: $$a = 0$$
 
 Dados dois pontos $$(x_1, y_1) e (x_2, y_2)$$ é possivel calcular o coefiencite angular a do seguinte modo: $$\frac{y_2-y_1}{x_2-x_1}$$ é interessante notar que isto pode ser representado por $$\frac{sin}{cos}$$ e que, portanto, o coeficiente angular pode ser calculado a partir da tangente $$a = tan\theta$$
 
